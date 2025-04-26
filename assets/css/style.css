@@ -167,6 +167,8 @@ section::before {
 }
 .result-holer {
     text-align: center;
+    position: relative;
+    width: 100%;
 }
 .result-holer p {
     color: #fff;
@@ -198,6 +200,21 @@ section::before {
 .result-description {
     font-size: 18px;
 }
+.blast-effect {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+.blast-effect.active {
+    display: block;
+}
+/* refresh icon */
 .refresh {
     width: 40px;
     display: block;

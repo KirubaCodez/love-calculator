@@ -63,15 +63,23 @@ function setSuccess(ele, msg) {
 
 // calculating score
 function calcScore() {
-    const randomValue = Math.floor(Math.random() * 100) + 1;
+    const randomValue = Math.floor(Math.random() * 100);
     let currentScore = 0;
 
     const counter = setInterval(() => {
+        const blast = document.querySelector(".blast-effect");
         if (currentScore <= randomValue) {
             currentScore++;
             percentCount.textContent = `${currentScore}%`
         } else {
             clearInterval(counter);
+            setTimeout(() => {
+                if (!blast.classList.contains("active")) {
+                    blast.classList.add("active");
+                    blast.stop();
+                    blast.play();
+                }
+            }, 300)
         }
     }, 10);
 
