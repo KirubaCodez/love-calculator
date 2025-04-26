@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Love+Light&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+
+    <header>
+        <div class="title">
+            <h1 class="heading"><span>&#9829;</span>love calculator<span>&#9829;</span></h1>
+            <p class="sub-para">Calculate love score with your soulmate</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <p class="section-desc">Get Your Own Love Results Instantly*</p>
+        <div class="wrapper">
+            <img src="./assets/images/reload.png" alt="Refresh Icon" class="refresh" />
+            <form action="" class="form-wrapper">
+                <div class="inputs">
+                    <div class="input-group">
+                        <label for="heroName">Hero Name:</label>
+                        <input type="text" class="data-input" id="heroName" autocomplete="off" />
+                        <span class="err"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="heroineName">Heroine Name:</label>
+                        <input type="text" class="data-input" id="heroineName" autocomplete="off" />
+                        <span class="err"></span>
+                    </div>
+                </div>
+                <button type="submit" class="submitBtn" id="sbmtBtn"><span>&#9829;</span> calculate <span>&#9829;</span></button>
+            </form>
+        </div>
+        <div class="result-holer">
+            <h2 class="result-tile">Result</h2>
+            <p class="percentage-count" id="percentCount"></p>
+            <p class="result-description" id="description"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>Made with <span>&#9829;</span> by <span>KirubaCodez</span></p>
+            <p class="footer-desc">Created for fun*</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/app.js"></script>
+
+</body>
+</html>
