@@ -83,7 +83,7 @@ function calcScore() {
                 scoreDescription.textContent = results.value60;
             } else if (randomValue >= 40) {
                 scoreDescription.textContent = results.value40;
-            } else if (randomValue >= 20) {
+            } else if (randomValue < 40) {
                 scoreDescription.textContent = results.value20;
             }
         }
