@@ -74,7 +74,7 @@ function calcScore() {
         } else {
             clearInterval(counter);
             setTimeout(() => {
-                if (!blast.classList.contains("active")) {
+                if (randomValue > 40 && !blast.classList.contains("active")) {
                     blast.classList.add("active");
                     blast.stop();
                     blast.play();
